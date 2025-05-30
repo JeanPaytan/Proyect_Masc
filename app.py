@@ -19,7 +19,7 @@ if not os.path.exists(MODEL_PATH):
 
 # Cargar modelo
 model = load_model(MODEL_PATH)
-labels = ['Con mascarilla', 'Sin mascarilla', 'Mal puesta']
+labels = ['Sin mascarilla', 'Con mascarilla', 'Mal puesta']
 
 @app.route('/predict', methods=['POST'])
 def predict():
